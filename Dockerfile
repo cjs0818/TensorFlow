@@ -13,7 +13,9 @@ RUN apt-get update \
 #ADD requirements.txt .
 #RUN pip3 install -r requirements.txt \
 #    && pip3 install tensorlayer nltk sklearn
-RUN pip3 install tensorflow-gpu tensorlayer nltk sklearn
+
+#RUN pip3 install tensorflow-gpu tensorlayer nltk sklearn
+RUN pip3 install tensorflow tensorlayer nltk sklearn
 
 
 RUN rm -rf /var/lib/apt/lists/*
